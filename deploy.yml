@@ -1,0 +1,15 @@
+name: Deploy dist to GitHub Pages
+on:
+  push:
+    branches: [main]  # 推送到 main 分支时自动部署
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist  # 指定部署 dist 文件夹
