@@ -1,11 +1,14 @@
 # Vue3 + Monaco Editor 汉化版
 
 这是一个完整的 Vue3 项目，集成了完全汉化的 Monaco Editor（VS Code 的编辑器核心）。所有的右键菜单、命令面板、提示信息等都已经被汉化为中文。
+---
 [在线预览地址](https://yuppiezero.github.io/vue3-MonacoEditor/index.html)：[https://yuppiezero.github.io/vue3-MonacoEditor/index.html](https://yuppiezero.github.io/vue3-MonacoEditor/index.html)
-
+---
 <img src="https://raw.githubusercontent.com/Yuppiezero/vue3-MonacoEditor/refs/heads/main/db05b84e71ed50e8033bd68ef7649879.png" width="300">
+##
+---
 
-*** 享受完全汉化的代码编辑体验！扫码之后记得留下邮箱地址，我会第一时间发送全部代码给您 *** 🎉
+***享受完全汉化的代码编辑体验！扫码之后记得留下邮箱地址，我会第一时间发送全部代码给您*** 🎉
 
 ## 功能特性
 
