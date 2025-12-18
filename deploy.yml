@@ -1,4 +1,4 @@
-name: Deploy Vue to GitHub Pages
+name: Deploy dist only
 
 on:
   push:
@@ -24,18 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
-      # 👇 只发布 dist
+      # 👇 直接发布 dist
       - name: Upload dist
         uses: actions/upload-pages-artifact@v3
         with:
