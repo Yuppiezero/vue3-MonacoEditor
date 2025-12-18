@@ -1,7 +1,7 @@
 name: Deploy dist to GitHub Pages
 on:
   push:
-    branches: [main]  # 推送到 main 分支时自动部署
+    branches: [main]
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -12,4 +12,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # 指定部署 dist 文件夹
+          publish_dir: ./dist
+          force_orphan: true  # 新增这一行，强制创建干净的 gh-pages 分支
