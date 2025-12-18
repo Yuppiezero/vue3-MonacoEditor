@@ -1,4 +1,4 @@
-name: Deploy dist to GitHub Pages
+name: Deploy Vue dist to Pages
 on:
   push:
     branches: [main]
@@ -6,11 +6,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Deploy to GitHub Pages
+      - uses: actions/checkout@v4
+      - name: Deploy dist folder
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          force_orphan: true  # 新增这一行，强制创建干净的 gh-pages 分支
+          force_orphan: true
