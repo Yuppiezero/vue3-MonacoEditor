@@ -355,6 +355,6 @@ MIT License
 欢迎提交 Issue 和 Pull Request！
 
 ---
-<img src="https://raw.githubusercontent.com/Yuppiezero/vue3-MonacoEditor/refs/heads/main/db05b84e71ed50e8033bd68ef7649879.png" width="200">
+<img src="https://raw.githubusercontent.com/Yuppiezero/vue3-MonacoEditor/refs/heads/main/db05b84e71ed50e8033bd68ef7649879.png" width="400">
 
 **享受完全汉化的代码编辑体验！** 🎉
